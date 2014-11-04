@@ -1,0 +1,557 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    padding-top: 40px;
+    background-color: #F5B000;
+}
+
+.container .brand {
+    color: #F5B000;
+}
+
+#navigationLinks li a {
+    color:#FCFCFB;
+}
+
+.content {
+    min-height: 500px;
+}
+
+a {
+    color: #F5B000;
+    font-weight: bold;
+}
+
+p.pull-right a {
+    color: #F5B000;
+}
+
+p.pull-right {
+    color: #fff;
+}
+
+.outerDiv {
+    min-height: 100%;
+}
+
+.content {
+    background-color: #FCFCFB;
+    margin: 0 0;
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+.center70 {
+    margin-left:auto;
+    margin-right:auto;
+    width:70%;
+}
+
+.center85 {
+    margin-left:auto;
+    margin-right:auto;
+    width:85%;
+}
+
+.center90 {
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+}
+
+.center95 {
+    margin-left:auto;
+    margin-right:auto;
+    width:95%;
+}
+
+.logged-in {
+    margin-top:10px;
+}
+
+.project-placeholder {
+    padding: 10% 0 10% 0;
+}
+
+.notification-placeholder {
+    padding: 10% 0 10% 0;
+}
+
+#new-project-link {
+    text-align: right;
+    margin-top: 9px;
+}
+
+.footer {
+    margin: -70px auto 0 auto;
+}
+
+footer.footer p {
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-placeholder {
+    display: block;
+    min-height: 36px;
+    padding: 20px 0 20px 0;
+}
+
+.div-sidebar, .div-sidebar h3, .div-content, .div-content h2 {
+    color: #606060;
+}
+
+.div-content a {
+    color: #F5B000;
+    font-weight: bold;
+}
+
+.div-content {
+    margin-bottom: 6px;
+    margin-left: 26px;
+    margin-right: 4px;
+    padding: 0 0 2% 0;
+}
+
+.div-sidebar {
+    margin-bottom: 6px;
+    margin-left: 4px;
+    margin-right: 6px;
+    padding: 1% 0 3% 0;
+}
+
+.div-sidebar hr {
+    margin-top: 0;
+}
+
+div.modal-footer input.btn-primary {
+    background-color: #2C2C2C;
+    background-image: -moz-linear-gradient(center top, #333333, #2F2F2F);
+    background-image: -webkit-linear-gradient(top, #333333, #2F2F2F); 
+}
+
+div.modal-body {
+    background-color: #FCFCFB;
+}
+
+form.modal-form {
+    margin: 0;
+}
+
+div.modal-body div.control-group {
+    margin-left: -50px;
+}
+
+div.controls p.help-block {
+    margin: 0;
+}
+
+div.modal-body div.control-group label {
+    font-weight: bold;
+}
+
+div.modal-header {
+    background-color: #2C2C2C;
+    background-image: -moz-linear-gradient(top, #333333, #222222);
+    background-image: -ms-linear-gradient(top, #333333, #222222);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+    background-image: -webkit-linear-gradient(top, #333333, #222222);
+    background-image: -o-linear-gradient(top, #333333, #222222);
+    background-image: linear-gradient(top, #333333, #222222);
+    background-repeat: repeat-x;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+div.modal-header h3 {
+    color: #FFFFFF;
+}
+
+div.modal-footer {
+    border-top-width: 1;
+    border-top-color: #E2A70E;
+    color: #F5B000;
+    background-color: #F5B000;
+}
+
+#newUserDiv {
+    margin-bottom: 2px;
+}
+
+#oldPasswordDiv {
+    padding-top: 20px;
+}
+
+#modalWelcome .modal-body h1, #modalWarning .modal-body h2 {
+    text-align: center;
+}
+
+#modalWelcome .modal-body, #modalWarning .modal-body {
+    -webkit-border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    padding: 50px 0 50px 0;
+}
+
+#modalWelcome, #modalWarning {
+    top: 70%;
+}
+
+#bodyHeader {
+    text-align: right;
+}
+
+#aboutText h2 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.sublogin-fieldset {
+    display: none;
+}
+
+/* --------------------- */
+/* Dashboard.php */
+.project-link {
+    display: block;
+    margin: 2px 0 2px 0;
+    -moz-border-radius: 7px; 
+    -webkit-border-radius: 7px; 
+    border-radius: 7px;
+    position: relative;
+    border: 2px solid;
+    padding: 0 0 0 5px; 
+    background: #F5B000;
+    font-weight: bold;
+}
+
+.project-link a.my-project-link {
+    display: block;
+    height: 100%;
+    font-size: 12pt;
+    float: right;
+    padding: 0 4px 0 0; 
+    color: #FCFCFB;
+}
+
+.project-link a.other-project-link {
+    display: block;
+    height: 100%;
+    font-size: 12pt;
+    float: right;
+    padding: 0 4px 0 0; 
+    color: #FCFCFB;
+}
+
+#notificationProjectLink a {
+    color: #FF7E00;
+    font-weight: bold;
+}
+
+.notificationHeader {
+    padding: 5px 5px 5px 5px;
+    display: block;
+}
+
+.notificationProjectTitle {
+    padding: 0 0 0 5px;
+}
+
+.notificationTitle {
+    display: inline;
+    font-weight: bold;
+}
+
+.notificationProjectTitle {
+    display: inline;
+}
+
+.notificationSender {
+    display: inline;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+.notificationTimestamp {
+    display: inline;
+    float: right;
+}
+
+.notificationBody {
+    padding: 0 5px 5px 5px;
+}
+
+.notification {
+    display: block;
+    margin: 2px 0 2px 0;
+    -moz-border-radius: 7px; 
+    -webkit-border-radius: 7px; 
+    border-radius: 7px;
+    position: relative;
+    border: 2px solid;
+    background: #E3E3E3;
+}
+
+.notification a.notificationLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 12pt;
+    position:absolute;
+}
+
+#modalView .row, #modalView .span4, #modalView span {
+    margin: 0;
+}
+
+#modalView .span2 {
+    margin-left: 60px;
+    padding-top: 5px;
+}
+
+#modalView i {
+    vertical-align: 3%;
+    padding-left: 4px;
+}
+
+/* --------------------- */
+/* ProjectView.php */
+.chat-header {
+    padding: 20px 0 20px 0;
+    margin-left: 0;
+}
+
+/* --------------------- */
+/* ProjectOverview.php */
+
+.participant-user {
+    display: block;
+    margin: 2px 0 2px 0;
+    -moz-border-radius: 7px; 
+    -webkit-border-radius: 7px; 
+    border-radius: 7px;
+    position: relative;
+    border: 2px solid;
+    padding: 0 0 0 5px;
+    background: #F5B000;
+    font-weight: bold;
+}
+
+/* Chat content */
+.chat-content {
+    margin-bottom: 20px;
+    height: 400px;
+    overflow: auto;
+    background-color: white;
+    margin: 0 0 0 20px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+/* General messages */
+p.chat-paragraph {
+    -moz-border-radius: 7px; 
+    -webkit-border-radius: 7px; 
+    border-radius: 7px;
+    padding: 3px 5px 3px 5px;
+    border: 2px solid;
+    border-color: #606060;
+    margin-bottom: 3px;
+    background: #E3E3E3;
+    color: #606060;
+}
+
+.chat-username { 
+    margin: 0px 0px 0px 0px;
+    min-width: 150px;
+    max-width: 150px;
+    display: inline-block;
+    color: #606060;
+}
+
+.chat-text {
+    line-height: 12px;
+}
+
+/* Own messages */
+p.own {
+    border: 2px solid;
+    border-color: #606060;
+    background: #E3E3E3;
+}
+
+/* Sidebar */
+.chat-sidebar hr {
+    margin: 4px 0 4px 0;
+}
+
+.online-users-content {
+    height: 200px;
+    overflow: auto;
+}
+
+#notificationLink {
+    padding-right: 5px;
+    color: #F5B000;
+    font-weight: bold;
+}
+
+#linkLink {
+    padding: 0 5px 0 5px;
+    color: #F5B000;
+    font-weight: bold;
+}
+
+#exitLink {
+    padding-left: 5px;
+    color: #F5B000;
+    font-weight: bold;
+}
+
+.chat-sidebar {
+    margin: 0 20px 0 0;
+}
+
+/* Admin online user row */
+p.admin-online-users-row {
+    font-weight: bold;
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    border-radius: 3px;
+    border-color: #606060;
+    border-width: 2px;
+    border-style: solid;
+    color: #606060;
+    padding-left: 5px;
+    background: #F5B000;
+    margin-bottom: 3px;
+}
+
+p.admin-online-users-row .admin-username {
+    text-align: left;
+}
+
+p.admin-online-users-row .admin-label {
+    float: right;
+    padding-right: 5px;
+}
+
+/* Online user row */
+p.online-users-row {
+    font-weight: bold; 
+    padding-left: 5px;
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #606060;
+    color: #606060; 
+    background: #F5B000;
+}
+
+/* Link row */
+p.link-row {
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #606060;
+    background: #F5B000;
+    padding-left: 5px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+p.link-row a {
+    color: #606060;
+}
+
+/* New message */
+.chat-message {
+    margin: 10px 0 0 20px;
+    padding-top: 10px;
+}
+
+/* --------------------- */
+/* Home.php */
+.div-brand {
+    margin-top: 10px;
+}
+
+#loginDiv .pull-right {
+    margin-top: -10px;
+}
+
+.navbar .input-small {
+    margin-top: 5px;
+}
+    
+.remember input[type=checkbox] {
+    margin:0;
+    height:13px;
+    display:inline;
+    vertical-align:text-top;
+}
+
+.sublogin-label {
+    display:inline;
+}
+
+.sublogin-checkbox {
+    margin-bottom: 6px;
+    display:inline;
+}
+
+#rememberMe {
+    margin-left: 0px;
+}
+
+.sublogin-span {
+    color: #eee;
+    margin-left: 2px;
+    margin-right: 20px;
+}
+
+.home-form {
+    margin-bottom: 6px;
+}
+
+.sublogin-fieldset {
+    margin-bottom: 2px;
+}
+
+.div-description {
+    padding: 10% 0 10% 0;
+}
+
+.div-register {
+    padding: 10% 0 10% 0;
+}
+
+#addUser div {
+    margin-bottom: 0px;
+}
+
+/* --------------------- */
+/* ProjectOverview.php */
+
+#projectDescription {
+    margin-top: 10px;
+}
+
+.div-sidebar hr {
+    margin: 4px 0 4px 0;
+}
