@@ -18,11 +18,12 @@
             <div class="content">
                 <div class="row">
                     <div class="span14">    
-                        <!--<iframe id="upload_target" name="upload_target" src="#"></iframe>                   
-                        <button class="btn" type="submit" id="atualizar">Atualizar</button>                                                                                                                                                                                             
-                        <hr/>-->
                     <div id="posts">
                     </div>
+					<div id="loading">
+						<center><img src="assets/images/loader.gif" height="100" width="100" /></center>
+						<center><h2>Carregando dados do Twitter...</h2></center>
+					</div>
                 </div>                  
             </div>
         <?php

@@ -1,20 +1,25 @@
-$(document).ready(function() {
-    $('#upload_target').hide();    
-    
-    $("#post").click(function() {
-        getPosts();
+(function($){
+  $(document).ready(function(){
+    $.ajaxSetup({
+      cache: false,
+      beforeSend: function() {
+        $('#posts').hide();
+        $('#loading').show();
+      },
+      complete: function(){
+        $('#loading').hide();
+        $('#posts').show();
+      },
+      success: function(){
+        $('#loading').hide();
+        $('#posts').show();
+      }
     });
-});
+    var $container = $('#posts');
+    $container.load("controller/contExtrator.php");
+    var refreshId = setInterval(function(){
+      $container.load("controller/contExtrator.php");
+    }, 300000);
+  });
+})(jQuery);
 
-function getPosts(){
-    $.get("controller/contExtrator.php", {function: "get"},
-        function(data){
-            $("#posts").html(data);
-        }
-    , "html");                
-}
-
-$(window).load(function() {
-    getPosts();  
-  }
-);
