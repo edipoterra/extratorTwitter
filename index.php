@@ -1,3 +1,3 @@
 <?php
-require("view/viewExtrator.php");
+	require("view/viewExtrator.php");
 ?>

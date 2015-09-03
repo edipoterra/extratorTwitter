@@ -19,7 +19,7 @@
     $container.load("controller/contExtrator.php");
     var refreshId = setInterval(function(){
       $container.load("controller/contExtrator.php");
-    }, 300000);
+    }, 900000);
   });
 })(jQuery);
 

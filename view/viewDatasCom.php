@@ -8,7 +8,7 @@
         <link href="../assets/css/extrator.css" rel="stylesheet">
 
         <script src="../assets/js/jquery-1.8.3.min.js" language="javascript"></script>
-        <script src="../assets/js/extratorArquivo.js" language="javascript"></script>
+        <script src="../assets/js/extratorTwitterDatasCom.js" language="javascript"></script>
     </head>
     <body>
 		<?php
@@ -18,15 +18,47 @@
             <div class="content">
                 <div class="row">
                     <div class="span14">
-                    	<div id="posts">
-                    	</div>
-                	</div>
-            	</div>
+                        <a class="btn" href="#modalAdicionar" data-toggle="modal">Adicionar</a>
+                        <hr/>
+                    <div id="posts">
+                    </div>
+                </div>
+            </div>
+            <div id="modalAdicionar" class="modal fade">
+                <div class="modal-header">
+                    <a class="close" data-dismiss="modal">&times;</a>
+                    <h3 id="modalContactHeader">Adicionar Datas Comemorativas e Feriados</h3>
+                </div>
+                <div class="modal-body">
+                	<form class="modal-form form-horizontal" id="datasComemorativas" method="post" action="../controller/contDatasCom.php?function=insert">
+                        <fieldset>
+                            <div class="modal-body">
+                                <div id="aboutText">
+                                        Data:
+                                        <br/>
+                                        <input type="text" name="data" id="data" />
+										<br/>
+										<br/>
+										Descrição
+										<br/>
+										<input type="text" name="desc" id="desc"/>
+                                        <br/>
+										<br/>
+                                        <button class="btn" type="submit" id="post">Salvar</button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input data-dismiss="modal" type="submit" class="btn btn-primary" value="Fechar" />
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
 
-				<?php
-				require("../utils/footer.php");
-				?>
-       		</div> 
+			<?php
+			require("../utils/footer.php");
+			?>
+       	</div> 
         
 		<footer>
             <p>Edipo Terra</p>
@@ -55,6 +87,10 @@
     <script type="text/javascript">
         var home = new Home();
     </script>
+
+	<script type="text/javascript">
+		$("$data").mask("99/99/9999");
+	</script>
 
     </body>
 </html>
