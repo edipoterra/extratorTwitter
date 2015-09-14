@@ -26,22 +26,18 @@
         <?php
         require("../utils/footer.php");
         ?>
-            
-    </div> 
-        
+
+    </div>
+
         <footer>
             <p>Edipo Terra</p>
         </footer>
-    
+
         <script src="../assets/js/jquery.min.js" type="text/javascript"></script>
         <script src="../assets/js/bootstrap-modal.js" type="text/javascript"></script>
         <script src="../assets/js/bootstrap-tooltip.js" type="text/javascript"></script>
         <script src="../assets/js/bootstrap-popover.js" type="text/javascript"></script>
         <script src="../assets/js/bootstrap-tab.js" type="text/javascript"></script>
-        <script src="../assets/js/timuork-general.js" type="text/javascript"></script>
-        <script src="../assets/js/timuork-popoverHandler.js" type="text/javascript"></script>
-        <script src="../assets/js/timuork-home.js" type="text/javascript"></script>
-        <script src="../assets/js/friendface-cadastro.js" type="text/javascript"></script>
         <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-30009537-1']);

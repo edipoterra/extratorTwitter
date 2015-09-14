@@ -1,10 +1,6 @@
 <?php
     header("Content-Type: text/html; charset=ISO-8859-1", true);
 
-    //error_reporting(E_ALL|E_STRICT);
-    //ini_set('display_errors', 1);
-
-
     if (!empty($_GET['function'])){
         switch($_GET['function']){
             case 'insert':
@@ -25,8 +21,8 @@
 		try{
 	        $mongo = new MongoClient('mongodb://edipo:edipo@localhost:27017');
 
-	        $mongo->selectDB( 'twitterdb' )->selectCollection( 'termo' )->insert( array( 'termos' => $termo ));   
-			
+	        $mongo->selectDB( 'twitterdb' )->selectCollection( 'termo' )->insert( array( 'termos' => $termo ));
+
 		}
 		catch(Exception $e){
 			echo '<h3>Opa deu erro!</h3>';
@@ -47,18 +43,20 @@
 	        $posts .= '<th>Excluir</th>';
 	        $posts .= '</thead>';
 	        $posts .= '<tbody>';
+
 	        foreach ($dados as $document){
 	            $posts .= '<tr>';
 	            $posts .= "<td>" . $document['termos'] . "</td>";
 	            $posts .= "<td>" . "<a href='../controller/contTermos.php?function=delete&termo=" . $document['termos'] . "'>excluir</a>" . "</td>";
 	            $posts .= '</tr>';
 	        }
+
 	        $posts .= '</tbody>';
 	        $posts .= '<table/>';
-	        echo $posts;						
+	        echo $posts;
 		}
 		catch(Exception $e){
-			echo '<h3>Opa deu erro!!!</h3>';
+			echo '<h3>Algum problema ocorreu com o Banco de Dados. Tente novamente mais tarde.</h3>';
 		}
     }
 
@@ -69,10 +67,10 @@
 	        $collection = $db->termo;
 	        $collection->remove(array('termos' => $termo));
 
-	        header("Location: ../view/viewTermos.php");			
+	        header("Location: ../view/viewTermos.php");
 		}
 		catch(Exception $e){
-			echo '<h3>Opa deu erro!!!</h3>';
+			echo '<h3>Algum problema ocorreu com o Banco de Dados. Tente novamente mais tarde.</h3>';
 		}
     }
 ?>

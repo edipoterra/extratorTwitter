@@ -10,16 +10,16 @@
             	<div class="modal-body">
                 	<div id="aboutText">
                         <p><span>
-                            Este extrator de informações do Twitter possui como 
+                            Este extrator de informações do Twitter possui como
                             objetivo efetuar as coletas da rede social, utilizando
                             os termos de busca cadastrado e armazena em banco
                             NO-SQL, para facilitar o processo de Data Mining.
                            </span></p>
                         <p><span>
-                            Além dos termos de busca, o sistema utiliza algumas 
+                            Além dos termos de busca, o sistema utiliza algumas
                             coordenadas para selecionar as informações por proximidades.
                            </span></p>
-                        <hr /> 
+                        <hr />
                 	</div>
             	</div>
             	<div class="modal-footer">
@@ -50,4 +50,4 @@
         	</fieldset>
     	</form>
 	</div>
-</div> 
+</div>
